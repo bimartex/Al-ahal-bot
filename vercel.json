@@ -1,8 +1,7 @@
 {
-  "cron": [
-    {
-      "path": "/api/grid-bot",
-      "schedule": "*/5 * * * *"
+  "functions": {
+    "api/bot.py": {
+      "runtime": "python3.9"
     }
-  ]
+  }
 }
