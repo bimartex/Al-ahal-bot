@@ -1,0 +1,7 @@
+{
+  "name": "bitget-grid-bot",
+  "type": "module",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}
