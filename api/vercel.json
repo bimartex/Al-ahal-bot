@@ -1,0 +1,8 @@
+{
+  "cron": [
+    {
+      "path": "/api/grid-bot",
+      "schedule": "*/5 * * * *"
+    }
+  ]
+}
