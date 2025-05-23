@@ -3,5 +3,13 @@
     "api/bot.py": {
       "runtime": "python3.9"
     }
-  }
+  },
+  "builds": [
+    { "src": "api/bot.py", "use": "@vercel/python" },
+    { "src": "frontend/pages/index.jsx", "use": "@vercel/next" }
+  ],
+  "routes": [
+    { "src": "/api/.*", "dest": "/api/bot.py" },
+    { "src": "/(.*)", "dest": "/frontend/pages/index.jsx" }
+  ]
 }
